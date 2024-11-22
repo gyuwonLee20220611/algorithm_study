@@ -1,4 +1,4 @@
-#백준 문제 30156
+#백준 문제 [30156](https://www.acmicpc.net/problem/30156)
 n = int(input())
 
 for i in range(n):
