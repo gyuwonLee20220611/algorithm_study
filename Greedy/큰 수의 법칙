@@ -1,0 +1,14 @@
+/* 배열의 크기n, 숫자가 더해지는 횟수 m, 한 수가 연속으로 더해질 수 있는 최대 수k 가 주어질 때의 
+최대의 수를 출력하는 코드*/
+n,m,k = map(int,input().split())
+ls = list(map(int,input().split()))
+ls.sort()
+result = 0
+
+first = ls[-1]
+second = ls[-2]
+
+result += first * (m // k) * k
+result += second * (m % k)
+
+print(result)
